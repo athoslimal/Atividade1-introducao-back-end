@@ -69,3 +69,7 @@ function validaaltura(valor){
         limpa_formulario();
         }
 }
+
+//nos testes, o site funcionou corretamente, aprensenta os resultados e mostra para o usuário a notificação de acordo com o IMC
+//ao digitar peso de '60' e altura de '170', ele mostra peso normal e informa o imc de '20.761245674740483'
+//ao digirar peso de '80' e altura de '160', ele mostra obesidade e informa o imc de '31.25'.
