@@ -1,0 +1,61 @@
+body{
+    text-align: center; /*função para centralizar o corpo do programa no html*/
+    background-color: rgb(23, 151, 85); /*definindo a cor de fundo do programa que será executado no html*/
+    margin: 0%
+}
+
+h1{
+    color: whitesmoke; /*cor do h1 e alinhamento do texto*/
+    text-align: center;
+}
+
+.info{ /*definindo algumas configurações para a classe info*/
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+    width: 20%;
+    margin: 1%;
+    background-color: rgb(23, 151, 85);
+    color: whitesmoke;
+    text-align: center;
+}
+
+.info:hover{ /*função para animar os cards quando o mouse passar em cima*/
+    box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.5); /*definindo sombra nos cards quando o mouse passa em cima*/
+}
+
+.parametros{ /*definindo configurações para a classe parâmetros*/
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+    width: 20%;
+    margin: 1%;
+    background-color: rgb(23, 151, 85);
+    color: whitesmoke;
+    text-align: left;
+}
+
+.parametros:hover{ /*função para animar os cards quando o mouse passar em cima*/
+    box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.5); /*definindo sombra nos cards quando o mouse passa em cima*/
+}
+
+#calcular{ /*acessando o id do botão calcular e definindo a posição dele com base na margem esquerda da tela*/
+    margin-left: 350px;
+}
+
+form{
+    display: flex; /*alinhamento do formulário*/
+    flex-direction: row; /*tudo que for sendo inserido ele vai emopurrando para linha de baixo*/
+    justify-content: center; /*posição dos botões dentro do form centralizada*/
+    align-items: stretch; /*o texto fica do tamanho padrão em formatação*/
+    width: 80%; /*ocupação do formulário na tela definido como 100%*/
+    margin-left: auto; /*padronizando no automático a margem esquerda e direita para ficarem do mesmo tamanho*/
+    margin-right: auto;
+}
+
+label{ /*acessando os títulos dentro dos botões*/
+    width: 100px;
+    line-height: 40px;
+    margin-bottom: 10px;
+}
+
+input{ /*acessando os campos de inserção*/
+    height: 80;
+    width: 60%;
+}

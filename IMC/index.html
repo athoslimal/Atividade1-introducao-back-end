@@ -1,0 +1,45 @@
+<!--iniciado a partir do 'html:5'
+será utilizado para a construção de uma calculadora de IMC>-->
+
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cálculo de IMC</title>
+    <script src="script.js"></script> <!--importando o script criado para a funcionalidade da calculadora do imc.-->
+    <link rel="stylesheet" href="estilo.css"> <!--importando a estilização definida no arquivo css-->
+</head>
+<body>
+    <noscript>O JavaScript está desativado ou não possui suporte no navegador.</noscript>
+    <h1>Calculadora de IMC</h1>
+    <form action="." method="get>"> <!--criando um formulário para o navegador enteder que terá entrada de dados(input) e defininco um nome para ele e uma função-->
+        <div class = "info"> <!--criando uma divisão com a classe info para ajudar na estilização-->
+            <label for="peso">Digite aqui o seu peso:</label> <!--definindo a primeira variável-->
+            <input type="text" name="peso" id="peso" value=""> <!--definindo o tipo do input, o id, o nome e o valor vazio-->
+        </div>
+
+        <div class="info">
+            <label for="altura">Digite aqui a sua altura em cm:</label>
+            <input type="text" name="altura" id="altura" value="">
+        </div>
+
+        <div class="info">
+            <label for="result">IMC:<br></label>
+            <input type="text"name="result" id="result" value="" disabled>
+        </div>
+
+        <div class ="parametros">Parâmetros:<br> <!--adicionando ao corpo do site mais uma divisão que vai conter os parâmetros-->
+            • Abaixo do peso: IMC < 18.5<br>
+            • Peso normal: 18.5 ≤ IMC < 24.9<br>
+            • Sobrepeso: 25 ≤ IMC < 29.9<br>
+            • Obesidade: IMC ≥ 30</div>
+        
+    </form>
+    <br/> <!--comando para pular uma linha-->
+    <button id="calcular">Calcular IMC</button> <!--criando o botão que vai entregar o resultado quando clicado e definindo seu id-->
+    <button id="limpar">Limpar</button> <!--criando um botão para limpar os dados inseridos-->
+
+</body>
+</html>
